@@ -65,9 +65,10 @@ class QuestionsController < ApplicationController
   # PATCH/PUT /questions/1
   # PATCH/PUT /questions/1.json
   def update
+    @question = Question.find(params[:id])
     respond_to do |format|
-      if @question.update(question_params)
-        current_user.questions << @question
+      if @question.update_attribute(question_params)
+        #current_user.questions << @question
         format.html { redirect_to @question, notice: 'Question was successfully updated.' }
         format.json { head :no_content }
       else
