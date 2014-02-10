@@ -1,6 +1,6 @@
 # A QA app that allows people to freely alter questions and answers
 
--->
+
 [![Build Status](https://travis-ci.org/Lbuell/Portfolio.png?branch=master)](https://travis-ci.org/Lbuell/Portfolio)
 
 By [Liam Buell](http://www.liambuell.com).
